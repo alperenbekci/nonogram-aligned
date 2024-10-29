@@ -1,0 +1,16 @@
+[package]
+name = "hello_guest"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+risc0-zkvm = { git = "https://github.com/risc0/risc0", tag = "v1.0.1", default-features = false,features=["std"] }
+serde = "1.0"
+nonogram = { path = "../../core" }
+ndarray = { version = "0.16.1", features = ["serde"] }
+
+[profile.dev]
+opt-level = 3
+
