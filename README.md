@@ -65,6 +65,12 @@ To make this project production-ready, our roadmap includes:
    ```bash
    git clone https://github.com/alperenbekci/nonogram-aligned.git
 
+   cd nonogram-aligned
+
+   npm i
+
+   npm run dev
+
    ```
 
 ## Team
